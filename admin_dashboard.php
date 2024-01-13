@@ -103,6 +103,15 @@ mysqli_close($conn);
         a:hover {
             text-decoration: underline;
         }
+        
+        #sign-out-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -135,5 +144,8 @@ mysqli_close($conn);
             </div>
         </div>
     </div>
+    <form method="post" action="admin_logout.php">
+        <button id="sign-out-btn" type="submit">Sign Out</button>
+    </form>
 </body>
 </html>

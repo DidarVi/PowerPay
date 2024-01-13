@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Verify the password
             if (password_verify($password, $row["password"])) {
                 // Password is correct, set session variables and redirect
-                $_SESSION["admin_id"] = $row["id"];
+                $_SESSION["adminid"] = $row["adminid"];
                 header("Location: admin_dashboard.php"); // Redirect to admin dashboard or wherever you want
                 exit();
             } else {
@@ -55,7 +55,6 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <title>Admin Login</title>
     <link rel="stylesheet" href="form.css">
-
 </head>
 <body>
     <h2>Admin Login</h2>
