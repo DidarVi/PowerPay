@@ -1,0 +1,25 @@
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin:0px;
+    background: white;
+}
+
+.logo {
+    max-width: 17%;
+    height: auto;
+}
+
+#sign-out-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.sign-out-container {
+            text-align: center;
+            margin-top: 20px;
+        }
